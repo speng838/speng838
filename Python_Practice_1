@@ -1,0 +1,14 @@
+#Practice with if and else statements as well as with methods. Working on understanding phython syntax
+
+def prompt(value):
+
+  def main(value):
+    if value < 0: main(value = float(input("input a non-negative integer: ")))
+    elif (value >= 0 and value < 0.35): print("Get back to work!, welcome to the dark side! Can't try again.")
+    elif (value >= 0.35 and value <= 1): print("Congrats, welcome to the winning side!!!")
+    else: prompt(float(input("read the initial question carefully. You failed. Enter a value between 0 and 1: ")))
+  main(value)
+  
+  print("Thanks for using our services!")
+
+prompt(float(input("enter a value between 0 and 1: ")))
